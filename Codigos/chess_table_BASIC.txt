@@ -1,0 +1,32 @@
+10 DIM tabuleiro(8,8)
+20 FOR linha=0 TO 7
+30 FOR coluna=0 TO 7 
+40 tabuleiro(linha,coluna) = 32
+50 NEXT coluna
+60 NEXT linha
+70 FOR coluna=0 TO 7
+80 tabuleiro(1,coluna) = 80
+90 tabuleiro(6,coluna) = 80
+100 NEXT coluna
+110 tabuleiro(0,0) = 84
+120 tabuleiro(0,1) = 67
+130 tabuleiro(0,2) = 66
+140 tabuleiro(0,3) = 68
+150 tabuleiro(0,4) = 82
+160 tabuleiro(0,5) = 66
+170 tabuleiro(0,6) = 67
+180 tabuleiro(0,7) = 84
+190 tabuleiro(7,0) = 84
+200 tabuleiro(7,1) = 67
+210 tabuleiro(7,2) = 66
+220 tabuleiro(7,3) = 68
+230 tabuleiro(7,4) = 82
+240 tabuleiro(7,5) = 66
+250 tabuleiro(7,6) = 67
+260 tabuleiro(7,7) = 84
+270 PRINT "---------------"
+280 FOR linha=0 TO 7
+290 PRINT CHR$(tabuleiro(linha,0)); "|"; CHR$(tabuleiro(linha,1)); "|"; CHR$(tabuleiro(linha,2)); "|"; CHR$(tabuleiro(linha,3)); "|"; CHR$(tabuleiro(linha,4)); "|";  CHR$(tabuleiro(linha,5)); "|";  CHR$(tabuleiro(linha,6)); "|";  CHR$(tabuleiro(linha,7));
+300 PRINT "-|-|-|-|-|-|-|-"
+310 NEXT linha
+320 PRINT "---------------"

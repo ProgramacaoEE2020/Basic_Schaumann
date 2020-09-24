@@ -1,0 +1,57 @@
+algoritmo "chess table"
+var
+   linha, coluna: inteiro
+   tabuleiro[9][9]: caractere
+inicio
+
+PARA linha=0 ATÉ 8 FAÇA
+   PARA coluna=0 ATÉ 8 FAÇA
+      tabuleiro[linha][coluna] <- ' '
+
+ PARA coluna=0 ATÉ 8 FAÇA
+   tabuleiro[1][coluna] <- 'P'
+   tabuleiro[6][c] <- 'P'
+
+tabuleiro[0][1] <- 'T';
+  tabuleiro[0][2] <- 'C';
+  tabuleiro[0][3] <- 'B';
+  tabuleiro[0][4] <- 'D';
+  tabuleiro[0][5] <- 'R';
+  tabuleiro[0][6] <- 'B';
+  tabuleiro[0][7] <- 'C';
+  tabuleiro[0][8] <- 'T';
+
+  tabuleiro[7][1] <- 'T';
+  tabuleiro[7][2] <- 'C';
+  tabuleiro[7][3] <- 'B';
+  tabuleiro[7][4] <- 'D';
+  tabuleiro[7][5] <- 'R';
+  tabuleiro[7][6] <- 'B';
+  tabuleiro[7][7] <- 'C';
+  tabuleiro[7][8] <- 'T';
+
+  tabuleiro[0][0] <- 'a';
+  tabuleiro[1][0] <- 'b';
+  tabuleiro[2][0] <- 'c';
+  tabuleiro[3][0] <- 'd';
+  tabuleiro[4][0] <- 'e';
+  tabuleiro[5][0] <- 'f';
+  tabuleiro[6][0] <- 'g';
+  tabuleiro[7][0] <- 'h';
+
+  tabuleiro[8][1] <- '1';
+  tabuleiro[8][2] <- '2';
+  tabuleiro[8][3] <- '3';
+  tabuleiro[8][4] <- '4';
+  tabuleiro[8][5] <- '5';
+  tabuleiro[8][6] <- '6';
+  tabuleiro[8][7] <- '7';
+  tabuleiro[8][8] <- '8';
+
+PARA linha=0 ATÉ 8 FAÇA
+   escreva(tabuleiro[l][0], "  |", tabuleiro[l][1], "|", tabuleiro[l][2], "|", tabuleiro[l][3], "|", tabuleiro[l][4], "|", tabuleiro[l][5], "|",  tabuleiro[l][6], "|",  tabuleiro[l][7], "|", tabuleiro[l][7], "|\n")
+   escreva ("   -----------------\n")
+
+escreva("\nSendo:  P -> Peão\n\t\tT -> Torre\n\t\tC -> Cavalo\n\t\tB -> Bispo\n\t\tD -> Dama\n\t\tR -> Rei\n")
+ 
+fimalgoritmo
