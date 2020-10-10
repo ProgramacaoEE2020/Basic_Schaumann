@@ -9,3 +9,11 @@
 - Como resultado, obtém-se o seguinte screenshot:
 
 ![](chess_table_BASIC.png)
+
+Funcionamento: Definindo o tamanho do tabuleiro é possivel ter a noção de onde se deve colocar as peças de xadrez. No código foi colocado os números referentes as letras na tabela ASCII nos respectivos lugares:
+84 -> T: Torre
+67 -> C: Cavalo
+66 -> B: Bispo
+68 -> D: Dama
+82 -> R: Rei
+80 -> P: Peão
